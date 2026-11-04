@@ -67,9 +67,10 @@ Classe Democrata: Precisão = 1.00 | Recall = 0.78 | F1-Score = 0.88
 Classe Republicana: Precisão = 0.17 | Recall = 1.00 | F1-Score = 0.29
 
 ## 📂 Estrutura do Repositório
+```
 ├── data/
 │   ├── LitDigestFull.xlsx       # Base de dados histórica bruta (1924-1936)
 │   └── Data Dictionary.docx     # Dicionário de dados e fórmulas
-├── notebooks/
+├── notebook/
 │   └── Previsões_resultado_eleições_EUA_1936.ipynb  # JNotebook com pipeline completo
 └── README.md                    # Documentação do projeto
