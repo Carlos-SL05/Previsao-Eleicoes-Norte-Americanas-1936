@@ -1,1 +1,1 @@
-# Previs-o-Elei-es-Norte-Americanas-1936
+# Previsao-Eleicoes-Norte-Americanas-1936
