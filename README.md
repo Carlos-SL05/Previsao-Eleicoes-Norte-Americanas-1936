@@ -2,7 +2,7 @@
 
 Este repositório contém o projeto desenvolvido o objetivo principal de investigar as causas do histórico erro preditivo cometido pela revista The Literary Digest na eleição presidencial dos EUA em 1936 e aplicar técnicas modernas de Machine Learning e Engenharia de Atributos para corrigir o viés de amostragem dos dados.
 
-📌 Contexto Histórico e O Problema
+## 📌 Contexto Histórico e O Problema
 
 Em 1936, a revista The Literary Digest realizou a maior pesquisa eleitoral de intenção de voto até então registrada, enviando cerca de 10 milhões de questionários postais e obtendo quase 2,4 milhões de respostas. Com base nessa quantidade massiva de dados, a publicação previu a vitória esmagadora do candidato republicano Alf Landon (57% contra 43%).
 
@@ -14,7 +14,7 @@ Viés de Amostragem (Sampling Bias): As listas de entrevistados foram montadas a
 
 Viés de Não-Resposta (Non-response Bias): A taxa de resposta foi de apenas ~23,8%, distorcida por eleitores insatisfeitos que responderam em maior proporção.
 
-🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
 O objetivo fundamental foi provar que a qualidade e a representatividade dos dados são mais críticas do que a quantidade de registros.
 
@@ -26,9 +26,9 @@ Capturar a migração real do eleitorado (Swing eleitoral).
 
 Construir um modelo preditivo capaz de superar o viés da revista e prever corretamente o vencedor da eleição de 1936.
 
-🛠️ Metodologia e Engenharia de Atributos
+## 🛠️ Metodologia
 
-1. Pré-processamento e Engenharia de Shares
+1. Pré-processamento
 
 Para evitar que o modelo sofresse distorções causadas por estados mais populosos (como New York) em comparação com estados menores (como Wyoming), transformamos contagens absolutas de votos em proporções relativas (Shares):
 
@@ -56,7 +56,7 @@ Hiperparâmetros Ideais: C = 100.0, gamma = 'scale'.
 
 Validação: Treinamento em dados temporais passados (1924–1932) e teste cego na eleição de 1936.
 
-📊 Resultados Obtidos
+## 📊 Resultados Obtidos
 
 Acurácia Geral: 79,17% (38 de 48 amostras estaduais classificadas corretamente).
 
@@ -65,3 +65,11 @@ Métricas por Classe (Teste de 1936):
 Classe Democrata: Precisão = 1.00 | Recall = 0.78 | F1-Score = 0.88
 
 Classe Republicana: Precisão = 0.17 | Recall = 1.00 | F1-Score = 0.29
+
+## 📂 Estrutura do Repositório
+├── data/
+│   ├── LitDigestFull.xlsx       # Base de dados histórica bruta (1924-1936)
+│   └── Data Dictionary.docx     # Dicionário de dados e fórmulas
+├── notebooks/
+│   └── Previsões_resultado_eleições_EUA_1936.ipynb  # JNotebook com pipeline completo
+└── README.md                    # Documentação do projeto
